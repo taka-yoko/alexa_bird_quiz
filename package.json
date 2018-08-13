@@ -1,0 +1,12 @@
+{
+  "name": "birdsong-quiz",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "deploy": "rm -f index.zip && zip -X -r index.zip *.js node_modules && aws lambda update-function-code --function-name birdsong-quiz --zip-file fileb://index.zip"
+  },
+  "dependencies": {
+    "ask-sdk": "^2.0.5"
+  },
+  "private": true
+}
